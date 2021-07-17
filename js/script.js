@@ -42,3 +42,4 @@ function openPage(PageName, elmnt, color){
 
 document.getElementById("defaultOpen").click();
 
+
