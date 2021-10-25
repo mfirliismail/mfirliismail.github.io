@@ -296,9 +296,11 @@ header ul {
 }
 
 .about-section img {
-    width: 500px;
-    height: 300px;
-    margin-right: 10px;
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 
 .about-section2 {
@@ -414,7 +416,7 @@ header ul {
 }
 
 .js {
-    width: 75%;
+    width: 95%;
     background-color: #f44336;
 }
 
