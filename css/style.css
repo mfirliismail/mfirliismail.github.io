@@ -432,17 +432,22 @@ header ul {
 }
 
 .nodejs {
-    width: 85%;
+    width: 95%;
     background-color: #04AA6D;
 }
 
 .express {
+    width: 95%;
+    background-color: chocolate;
+}
+
+.react {
     width: 90%;
     background-color: chocolate;
 }
 
 .database {
-    width: 85%;
+    width: 95%;
     background-color: #ccc;
 }
 
