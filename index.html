@@ -3,536 +3,602 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Muhamad Firli Ismail — Fullstack Developer</title>
+  <title>Muhamad Firli Ismail — Fullstack Developer & System Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- PRELOADER -->
-  <div id="preloader">
-    <div id="preloader-title">
-      <span>Firli</span><span style="color:var(--acc)">.</span>
-    </div>
-    <div id="preloader-bar-wrap">
-      <div id="preloader-bar"></div>
-    </div>
-    <div id="preloader-labels">
-      <span>Loading portfolio</span>
-      <span><span id="preloader-count">0</span>%</span>
-    </div>
-  </div>
-
-  <!-- CUSTOM CURSOR -->
-  <div id="cursor-ring"></div>
-  <div id="cursor-dot"></div>
-
-  <!-- BACKGROUND -->
-  <div class="bg-gradient"></div>
-  <canvas id="field-canvas"></canvas>
-  <div class="bg-grid"></div>
-  <div class="blob-a"></div>
-  <div class="blob-b"></div>
-  <div class="bg-grain"></div>
-
-  <!-- SPOTLIGHT -->
-  <div id="glow"></div>
-
-  <!-- NAV -->
-  <nav>
-    <a href="#top" class="nav-logo">
-      <span class="nav-logo-icon">
-        <img src="assets/firli-portrait.jpg" alt="Firli">
-      </span>
-      <span class="nav-logo-text">Firli<span style="color:var(--acc)">.</span></span>
-    </a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-    </div>
-    <a href="#contact" class="nav-cta">Get in touch →</a>
-  </nav>
-
-  <!-- HERO -->
-  <header id="top">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      Available for work · Indonesia
-    </div>
-    <h1 class="hero-h1">
-      Muhamad Firli
-      <span class="outline">Ismail<span class="accent">.</span></span>
-    </h1>
-    <p class="hero-sub">
-      I build <em id="typed-text"></em><span class="hero-cursor"></span>
-    </p>
-    <p class="hero-desc">
-      Fullstack developer &amp; system architect with 4+ years turning complex business requirements into reliable, well-architected products — from enterprise audit platforms to climate-tech and wellness apps.
-    </p>
-    <div class="hero-btns">
-      <a href="#work" class="btn-primary">View selected work →</a>
-      <a href="#contact" class="btn-secondary">Let's talk</a>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <span class="scroll-line"></span>
-    </div>
-  </header>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span>Fullstack Developer<span class="marquee-sep">✦</span>System Architect<span class="marquee-sep">✦</span>Backend Engineer<span class="marquee-sep">✦</span>Team Lead<span class="marquee-sep">✦</span>Node.js<span class="marquee-sep">✦</span>React &amp; Next.js<span class="marquee-sep">✦</span></span>
-      <span aria-hidden="true">Fullstack Developer<span class="marquee-sep">✦</span>System Architect<span class="marquee-sep">✦</span>Backend Engineer<span class="marquee-sep">✦</span>Team Lead<span class="marquee-sep">✦</span>Node.js<span class="marquee-sep">✦</span>React &amp; Next.js<span class="marquee-sep">✦</span></span>
-    </div>
-  </div>
-
-  <!-- KINETIC STATEMENT -->
-  <section id="kinetic-section">
-    <h2 data-kinetic="">Requirements in. Architecture mapped. Systems that ship — and stay shipped.</h2>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-grid">
-
-      <div data-reveal="" style="position:relative">
-        <div id="portrait-wrap" class="portrait-wrap" data-cursor="">
-          <canvas id="portrait-canvas" class="portrait-canvas"></canvas>
-          <div id="portrait-hint" class="portrait-hint">
-            <div class="portrait-hint-icon">✦</div>
-            <div class="portrait-hint-text">Hover to reveal</div>
-          </div>
-          <div id="portrait-label" class="portrait-label">
-            <div class="portrait-label-name">Muhamad Firli Ismail</div>
-            <div class="portrait-label-role">Fullstack Developer · Indonesia</div>
-          </div>
-        </div>
-        <div class="portrait-status">
-          <span class="portrait-status-dot"></span>Open to work
-        </div>
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="side-photo">
+        <div class="side-photo-bg"></div>
       </div>
 
-      <div data-reveal="" data-delay="120">
-        <p class="section-label"><span></span>About</p>
-        <p>
-          I lead the architecture, stay hands-on across the <em style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--acc)">whole stack</em>, and ship products people actually rely on.
-        </p>
-        <p class="about-desc">
-          Based in Indonesia, I've spent the last four years building backend and frontend for everything from enterprise audit systems integrated with big-data infrastructure, to a climate-monitoring platform for mangrove restoration, to a wellness app rooted in sound therapy. I gather requirements with stakeholders, map the workflows, design the system, and deploy and maintain it in production.
-        </p>
-        <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-num">4+</div>
-            <div class="stat-label">Years of experience</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Projects shipped</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5</div>
-            <div class="stat-label">Companies &amp; clients</div>
-          </div>
+      <div class="side-identity">
+        <div class="side-avatar">
+          <img src="assets/firli-portrait.jpg" alt="Muhamad Firli Ismail">
         </div>
+        <div class="side-name-wrap">
+          <div class="side-name">Muhamad Firli</div>
+          <span class="side-role">Fullstack Dev</span>
+        </div>
+        <button class="side-burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
 
+      <div class="side-divider"></div>
+
+      <p class="side-bio">
+        I'm Muhamad Firli Ismail, a Fullstack Developer & System Architect focused on building reliable systems and shipped products.
+      </p>
+
+      <nav class="side-nav">
+        <a href="#about" class="side-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <span>About</span>
+        </a>
+        <a href="#services" class="side-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          <span>Services</span>
+        </a>
+        <a href="#works" class="side-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20 20 4"/><path d="M14 4h6v6"/></svg>
+          <span>Works</span>
+        </a>
+        <a href="#experience" class="side-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h14a2 2 0 0 1 2 2v14l-4-3H4z"/></svg>
+          <span>Experience</span>
+        </a>
+        <a href="assets/CV_Muhamad_Firli_Ismail.pdf" download class="side-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+          <span>Download CV</span>
+        </a>
+      </nav>
+
+      <div class="side-socials">
+        <a href="https://github.com/mfirliismail" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/muhamad-firli-ismail" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.7v1.7c.6-1 1.9-2 4-2 4.3 0 5 2.8 5 6.4V21h-4v-5.4c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4z"/></svg>
+        </a>
+        <a href="mailto:m.firliismail@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a href="tel:+6285711775592" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.4.6 3.5.1.4 0 .7-.2 1z"/></svg>
+        </a>
+      </div>
+
+      <a href="#contact" class="side-cta">Get in touch</a>
     </div>
-  </section>
+  </aside>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <p data-reveal="" class="section-label"><span></span>Experience</p>
-    <h2 data-reveal="" class="section-h2">Where I've worked</h2>
+  <!-- ================= MAIN ================= -->
+  <main class="main">
 
-    <div class="exp-timeline">
-
-      <div data-reveal="" class="exp-item">
-        <span class="exp-dot active"></span>
-        <div class="exp-header">
-          <h3 class="exp-title">Fullstack Software Developer</h3>
-          <span class="exp-date">Jul 2022 — Present</span>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="topbar-pill topbar-icon-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.4.6 3.5.1.4 0 .7-.2 1z"/></svg>
         </div>
-        <div class="exp-company">PT Noxus Ideata Prima · Tangerang Selatan</div>
-        <p class="exp-desc">Lead a team in designing application architecture, defining system concepts and mapping business workflows — while building and maintaining backend and frontend, optimizing performance, and handling post-launch maintenance. Deploy and operate on VPS with Docker &amp; Nginx.</p>
-        <div class="tags">
-          <span class="tag">Team Lead</span>
-          <span class="tag">System Architecture</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Nginx</span>
-        </div>
+        <div class="topbar-pill">@mfirliismail</div>
+        <div class="topbar-pill"><span>New work</span><span class="dot-live"></span> Available</div>
       </div>
-
-      <div data-reveal="" data-delay="80" class="exp-item">
-        <span class="exp-dot past"></span>
-        <div class="exp-header">
-          <h3 class="exp-title">Fullstack Developer — Freelance</h3>
-          <span class="exp-date">2024 — 2025</span>
-        </div>
-        <div class="exp-company">NASCLIM · Remote</div>
-        <p class="exp-desc">Developed a web-based climate-monitoring platform supporting sustainable mangrove management — a real-time analytics dashboard, community education modules, and carbon land-restoration monitoring, integrating environmental data tools for actionable, data-driven insights.</p>
-        <div class="tags">
-          <span class="tag">React.js</span>
-          <span class="tag">Analytics</span>
-          <span class="tag">Climate Tech</span>
-        </div>
+      <div class="topbar-right">
+        <span class="topbar-based">Based in</span>
+        <strong>Indonesia</strong>
       </div>
-
-      <div data-reveal="" data-delay="140" class="exp-item">
-        <span class="exp-dot past"></span>
-        <div class="exp-header">
-          <h3 class="exp-title">Backend Developer</h3>
-          <span class="exp-date">Feb 2022 — Aug 2022</span>
-        </div>
-        <div class="exp-company">Sagara Technology · Jakarta</div>
-        <p class="exp-desc">Delivered application features collaboratively across tech teams with Node.js, Express.js &amp; PostgreSQL. Deployed and maintained services on Google Cloud Platform with Docker, resolved bugs and contributed to feature improvements.</p>
-        <div class="tags">
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">GCP</span>
-        </div>
-      </div>
-
-      <div data-reveal="" data-delay="200" class="exp-item" style="padding-bottom:4px">
-        <span class="exp-dot past"></span>
-        <div class="exp-header">
-          <h3 class="exp-title">Backend Developer</h3>
-          <span class="exp-date">Nov 2021 — Feb 2022</span>
-        </div>
-        <div class="exp-company">Tamadun Technology International · Yogyakarta</div>
-        <p class="exp-desc">Maintained and developed application features with Node.js, Express.js &amp; MongoDB. Resolved bugs and enhanced existing features to improve application stability and performance.</p>
-        <div class="tags">
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">Express</span>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <p data-reveal="" class="section-label"><span></span>Capabilities</p>
-    <h2 data-reveal="" class="section-h2" style="margin-bottom:52px">The toolkit</h2>
-    <div class="skills-grid">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <a href="#works" class="hero-badge">
+        <span class="hero-badge-avatar">
+          <img src="assets/firli-portrait.jpg" alt="">
+        </span>
+        <span>My latest project is live!</span>
+        <span class="hero-badge-arrow">→</span>
+      </a>
 
-      <div data-reveal="" class="skill-card">
-        <h3>Backend</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Fastify.js</span>
-          <span class="skill-tag">Sequelize</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Elasticsearch</span>
-          <span class="skill-tag">ClickHouse</span>
-          <span class="skill-tag">Docker</span>
+      <h1 class="hero-title">
+        Hi I'm Muhamad Firli
+        <br>Fullstack Dev
+        <span class="hero-icon-inline">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 3h8l4 4v10a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V7z"/><path fill="#fff" d="M9 12h6v2H9zm0-3h6v2H9zm0 6h4v2H9z"/></svg>
+        </span>
+        & System Architect
+      </h1>
+
+      <!-- IMAGE MARQUEE -->
+      <div class="hero-gallery">
+        <div class="hero-gallery-track">
+          <div class="hg-item"><img src="assets/strovia-web.png" alt=""></div>
+          <div class="hg-item"><img src="assets/nasclim.png" alt=""></div>
+          <div class="hg-item"><img src="assets/republik-biosphere.png" alt=""></div>
+          <div class="hg-item"><img src="assets/Cryptoex landing.png" alt=""></div>
+          <div class="hg-item"><img src="assets/shipping3.png" alt=""></div>
+          <div class="hg-item"><img src="assets/stikes.png" alt=""></div>
+          <div class="hg-item"><img src="assets/strovia-mobile.png" alt=""></div>
+          <!-- duplicate for loop -->
+          <div class="hg-item"><img src="assets/strovia-web.png" alt=""></div>
+          <div class="hg-item"><img src="assets/nasclim.png" alt=""></div>
+          <div class="hg-item"><img src="assets/republik-biosphere.png" alt=""></div>
+          <div class="hg-item"><img src="assets/Cryptoex landing.png" alt=""></div>
+          <div class="hg-item"><img src="assets/shipping3.png" alt=""></div>
         </div>
       </div>
+    </section>
 
-      <div data-reveal="" data-delay="80" class="skill-card">
-        <h3>Frontend</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-        </div>
-      </div>
-
-      <div data-reveal="" data-delay="140" class="skill-card">
-        <h3>Architecture &amp; Analysis</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Microservices</span>
-          <span class="skill-tag">Monolith</span>
-          <span class="skill-tag">System Design</span>
-          <span class="skill-tag">Business Analysis</span>
-          <span class="skill-tag">BRD / FRD</span>
-        </div>
-      </div>
-
-      <div data-reveal="" data-delay="200" class="skill-card">
-        <h3>Process &amp; Collaboration</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Agile</span>
-          <span class="skill-tag">Waterfall</span>
-          <span class="skill-tag">ClickUp</span>
-          <span class="skill-tag">Trello</span>
-          <span class="skill-tag">Public Speaking</span>
-          <span class="skill-tag">Stakeholder Comms</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section id="work">
-    <p data-reveal="" class="section-label"><span></span>Selected work</p>
-    <h2 data-reveal="" class="section-h2">Things I've shipped</h2>
-
-    <!-- FEATURED: STROVIA -->
-    <div data-reveal="" class="project-featured" data-href="https://strovia.app">
-      <div class="project-featured-glow"></div>
-      <div class="project-featured-body">
+    <!-- PROJECTS -->
+    <section class="section" id="works">
+      <div class="section-head">
         <div>
-          <div class="project-badge">
-            <span class="badge-featured">Featured</span>
-            <span class="badge-cat">528 Hz · Wellness</span>
-          </div>
-          <h3>STROVIA</h3>
-          <p class="tagline">Sound therapy for stroke recovery</p>
-          <p class="desc">A mobile + web wellness product using 528 Hz frequency therapy and subliminal audio to support mental relaxation and stroke recovery. Combines audio-healing research with an intuitive interface, a personal AI companion, and a subscription-based listening experience.</p>
-          <div class="featured-tags">
-            <span class="featured-tag">React Native</span>
-            <span class="featured-tag">Audio Streaming</span>
-            <span class="featured-tag">AI Chat</span>
-            <span class="featured-tag">Subscriptions</span>
-          </div>
-          <a href="https://strovia.app" target="_blank" rel="noopener" class="featured-link">Visit strovia.app ↗</a>
+          <span class="section-pill">Latest Projects</span>
+          <h2 class="section-title">Projects that<br>ship &amp; scale</h2>
         </div>
-        <div class="project-featured-imgs">
-          <img src="assets/strovia-web.png" alt="Strovia web app" loading="lazy" class="main">
-          <img src="assets/strovia-mobile.png" alt="Strovia mobile app" loading="lazy" class="mobile">
-        </div>
-      </div>
-      <div class="project-featured-footer">
-        <div><img src="assets/strovia-chat.png" alt="Strovia AI chat" loading="lazy"></div>
-        <div><img src="assets/strovia-player.png" alt="Strovia audio player" loading="lazy"></div>
-      </div>
-    </div>
-
-    <!-- PROJECT CARDS -->
-    <div class="pcards-grid">
-
-      <div data-reveal="" class="pcard" data-delay="0" data-href="https://nasclim.id/">
-        <div class="pcard-inner">
-          <div class="pcard-img-wrap">
-            <img src="assets/nasclim.png" alt="NASCLIM" class="pcard-img active" loading="lazy">
-            <div class="pcard-overlay">
-              <span class="pcard-num">01</span>
-              <span class="pcard-cta">View project <em>↗</em></span>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="pcard-head">
-              <h3 class="pcard-title">NASCLIM</h3>
-              <span class="pcard-arrow">↗</span>
-            </div>
-            <p class="pcard-desc">Climate-tech platform for sustainable mangrove management — real-time analytics, learning modules &amp; carbon-restoration monitoring.</p>
-            <div class="pcard-tags">
-              <span>Next.js</span><span>Dashboard</span><span>Climate</span>
-            </div>
-          </div>
+        <div class="section-year">
+          <div class="copy">©</div>
+          <div class="year">22-26</div>
         </div>
       </div>
 
-      <div data-reveal="" class="pcard" data-delay="80" data-href="https://republikbiosphere.com">
-        <div class="pcard-inner">
-          <div class="pcard-img-wrap">
-            <img src="assets/republik-biosphere.png" alt="Republik Biosphere" class="pcard-img active" loading="lazy">
-            <div class="pcard-overlay">
-              <span class="pcard-num">02</span>
-              <span class="pcard-cta">View project <em>↗</em></span>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="pcard-head">
-              <h3 class="pcard-title">Republik Biosphere</h3>
-              <span class="pcard-arrow">↗</span>
-            </div>
-            <p class="pcard-desc">Premium corporate portal for an investment-holding ecosystem — subsidiary visibility, corporate news &amp; world-class UI/UX.</p>
-            <div class="pcard-tags">
-              <span>Corporate</span><span>UI/UX</span><span>CMS</span>
-            </div>
-          </div>
+      <div class="filter-row">
+        <div class="filter-chip">
+          <span>Wellness App</span>
+          <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-7 11-7 11z"/></svg></span>
+        </div>
+        <div class="filter-chip">
+          <span>Climate Tech</span>
+          <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 15a4 4 0 1 1 1-7.9A5 5 0 0 1 18 9a3 3 0 0 1 0 6z"/></svg></span>
+        </div>
+        <div class="filter-chip">
+          <span>Enterprise</span>
+          <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 10h16"/></svg></span>
+        </div>
+        <div class="filter-chip">
+          <span>Fintech</span>
+          <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span>
         </div>
       </div>
 
-      <div data-reveal="" class="pcard" data-delay="160" data-href="https://stikesmitrakeluarga.ac.id">
-        <div class="pcard-inner">
-          <div class="pcard-img-wrap">
-            <img src="assets/stikes.png" alt="STIKES Mitra Keluarga" class="pcard-img active" loading="lazy">
-            <div class="pcard-overlay">
-              <span class="pcard-num">03</span>
-              <span class="pcard-cta">View project <em>↗</em></span>
-            </div>
+      <div class="project-grid">
+        <a class="proj-card" href="https://strovia.app" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/strovia-web.png" alt="Strovia"></div>
+          <div class="proj-meta">
+            <div class="proj-title">STROVIA <span class="arrow">↗</span></div>
+            <div class="proj-tag">Wellness · Sound Therapy</div>
           </div>
-          <div class="pcard-body">
-            <div class="pcard-head">
-              <h3 class="pcard-title">STIKES Mitra Keluarga</h3>
-              <span class="pcard-arrow">↗</span>
-            </div>
-            <p class="pcard-desc">Modern, responsive campus information portal — admissions, program studies &amp; professional institutional profile.</p>
-            <div class="pcard-tags">
-              <span>Web</span><span>Responsive</span><span>CMS</span>
-            </div>
+        </a>
+        <a class="proj-card" href="https://nasclim.id/" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/nasclim.png" alt="NASCLIM"></div>
+          <div class="proj-meta">
+            <div class="proj-title">NASCLIM <span class="arrow">↗</span></div>
+            <div class="proj-tag">Climate · Analytics Dashboard</div>
           </div>
+        </a>
+        <a class="proj-card" href="https://republikbiosphere.com" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/republik-biosphere.png" alt="Republik Biosphere"></div>
+          <div class="proj-meta">
+            <div class="proj-title">Republik Biosphere <span class="arrow">↗</span></div>
+            <div class="proj-tag">Corporate · Investment Holding</div>
+          </div>
+        </a>
+        <a class="proj-card" href="https://cryptoex.id/" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/Cryptoex landing.png" alt="CryptoEx"></div>
+          <div class="proj-meta">
+            <div class="proj-title">CryptoEx <span class="arrow">↗</span></div>
+            <div class="proj-tag">Fintech · Crypto Signal Scanner</div>
+          </div>
+        </a>
+        <a class="proj-card" href="#" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/shipping3.png" alt="SCJ Shipping"></div>
+          <div class="proj-meta">
+            <div class="proj-title">SCJ Shipping <span class="arrow">↗</span></div>
+            <div class="proj-tag">Logistics · Corporate</div>
+          </div>
+        </a>
+        <a class="proj-card" href="https://stikesmitrakeluarga.ac.id" target="_blank" rel="noopener">
+          <div class="proj-img"><img src="assets/stikes.png" alt="STIKES"></div>
+          <div class="proj-meta">
+            <div class="proj-title">STIKES Mitra Keluarga <span class="arrow">↗</span></div>
+            <div class="proj-tag">Education · Campus Portal</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-head">
+        <div>
+          <span class="section-pill">Services</span>
+          <h2 class="section-title">Building software<br>that lasts.</h2>
         </div>
+        <p class="section-lede">
+          I help teams turn business requirements into<br>
+          production-grade systems — from architecture<br>
+          &amp; backend to frontend &amp; deployment.
+        </p>
       </div>
 
-      <div data-reveal="" class="pcard pcard--wide" data-delay="0" data-href="https://cryptoex.id/">
-        <div class="pcard-inner">
-          <div class="pcard-img-wrap">
-            <img src="assets/Cryptoex landing.png" alt="CryptoEx landing" class="pcard-img active" loading="lazy">
-            <img src="assets/Cryptoex fitur new.png" alt="CryptoEx fitur" class="pcard-img" loading="lazy">
-            <img src="assets/Cryptoex how.png" alt="CryptoEx cara kerja" class="pcard-img" loading="lazy">
-            <div class="pcard-overlay">
-              <span class="pcard-num">04</span>
-              <span class="pcard-cta">View project <em>↗</em></span>
-            </div>
-            <div class="pcard-dots">
-              <span class="active"></span><span></span><span></span>
-            </div>
+      <div class="services-grid">
+        <div class="svc-card">
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><circle cx="7" cy="7" r=".5" fill="currentColor"/><circle cx="7" cy="17" r=".5" fill="currentColor"/></svg>
           </div>
-          <div class="pcard-body">
-            <div class="pcard-head">
-              <h3 class="pcard-title">CryptoEx</h3>
-              <span class="pcard-arrow">↗</span>
-            </div>
-            <p class="pcard-desc">Platform scanner sinyal kripto berbasis MTF — analisis otomatis 20+ indikator teknikal dari 4 exchange (Binance, KuCoin, OKX, Crypto.com) dengan Fear &amp; Greed Index dan real-time chart.</p>
-            <div class="pcard-tags">
-              <span>React.js</span><span>Node.js</span><span>WebSocket</span><span>Crypto</span>
-            </div>
+          <h3>Backend Engineering</h3>
+          <p>Reliable APIs, databases &amp; services built to scale under real production load.</p>
+          <div class="svc-tags">
+            <span>Node.js</span><span>Fastify</span><span>PostgreSQL</span><span>Elasticsearch</span>
           </div>
-        </div>
-      </div>
-
-      <div data-reveal="" class="pcard pcard--wide" data-delay="120">
-        <div class="pcard-inner">
-          <div class="pcard-img-wrap">
-            <img src="assets/shipping3.png" alt="SCJ Shipping hero" class="pcard-img active" loading="lazy">
-            <img src="assets/Shipping.png" alt="SCJ Shipping services" class="pcard-img" loading="lazy">
-            <img src="assets/Shipping2.png" alt="SCJ Shipping sea freight" class="pcard-img" loading="lazy">
-            <div class="pcard-overlay">
-              <span class="pcard-num">05</span>
-              <span class="pcard-cta">View project <em>↗</em></span>
-            </div>
-            <div class="pcard-dots">
-              <span class="active"></span><span></span><span></span>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="pcard-head">
-              <h3 class="pcard-title">SCJ Shipping</h3>
-              <span class="pcard-arrow">↗</span>
-            </div>
-            <p class="pcard-desc">Corporate website untuk perusahaan logistik internasional — Sea Freight, Air Freight, Trucking &amp; Warehouse dengan profil layanan dan multi-page company portal.</p>
-            <div class="pcard-tags">
-              <span>Next.js</span><span>Corporate</span><span>Logistics</span><span>CMS</span>
-            </div>
+          <div class="svc-foot">
+            <span class="svc-note">Let's build the backbone</span>
+            <a href="#contact" class="svc-btn">Book a Call</a>
           </div>
         </div>
+
+        <div class="svc-card">
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 22h8"/></svg>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Modern, conversion-focused interfaces built with React, Next.js &amp; TypeScript.</p>
+          <div class="svc-tags">
+            <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span>
+          </div>
+          <div class="svc-foot">
+            <span class="svc-note">Let's ship the interface</span>
+            <a href="#contact" class="svc-btn">Book a Call</a>
+          </div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7 12 3l8 4v10l-8 4-8-4z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg>
+          </div>
+          <h3>System Architecture</h3>
+          <p>End-to-end architecture for enterprise systems — from requirement to production.</p>
+          <div class="svc-tags">
+            <span>Microservices</span><span>Monolith</span><span>System Design</span>
+          </div>
+          <div class="svc-foot">
+            <span class="svc-note">Let's design the system</span>
+            <a href="#contact" class="svc-btn">Book a Call</a>
+          </div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg>
+          </div>
+          <h3>Fullstack Delivery</h3>
+          <p>Ownership from BRD to deployment — I ship it, deploy it, and keep it running.</p>
+          <div class="svc-tags">
+            <span>Docker</span><span>Nginx</span><span>VPS</span><span>CI/CD</span>
+          </div>
+          <div class="svc-foot">
+            <span class="svc-note">Let's ship it end-to-end</span>
+            <a href="#contact" class="svc-btn">Book a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section-head">
+        <div>
+          <span class="section-pill">Process</span>
+          <h2 class="section-title">How I ship it</h2>
+        </div>
+        <div class="section-year"><div class="year">04 Steps</div></div>
       </div>
 
-    </div>
+      <p class="process-lede">
+        Every project begins with understanding the business — then evolves into an architecture that is distinctive, scalable, and built to last in production.
+      </p>
 
-    <!-- MORE WORK LIST -->
-    <div data-reveal="" class="work-list">
-      <div class="work-row">
-        <span class="work-num">01</span>
-        <div class="work-info">
-          <div class="work-title">SMA — Smart Audit Management</div>
-          <div class="work-desc">Integrated audit planning, real-time monitoring &amp; digital reporting (KKA, LHA, follow-ups).</div>
+      <div class="process-grid">
+        <div class="proc-item">
+          <div class="proc-head">
+            <span class="proc-step">Step 01</span>
+            <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+          </div>
+          <h4>Discover &amp; Define</h4>
+          <div class="proc-tags"><span>Research</span><span>BRD/FRD</span><span>Stakeholders</span></div>
         </div>
-        <div class="work-tags">
-          <span class="card-tag">System Design</span>
-          <span class="card-tag">Security</span>
+        <div class="proc-item">
+          <div class="proc-head">
+            <span class="proc-step">Step 02</span>
+            <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 3 8v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+          </div>
+          <h4>Architect &amp; Design</h4>
+          <div class="proc-tags"><span>System Design</span><span>DB Schema</span><span>API</span></div>
         </div>
-      </div>
-      <div class="work-row">
-        <span class="work-num">02</span>
-        <div class="work-info">
-          <div class="work-title">BRISMA v2.0 / v2.0.2 — BRI Audit System</div>
-          <div class="work-desc">Enterprise audit platform integrated with BRI's internal big-data infrastructure.</div>
+        <div class="proc-item">
+          <div class="proc-head">
+            <span class="proc-step">Step 03</span>
+            <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
+          </div>
+          <h4>Build &amp; Integrate</h4>
+          <div class="proc-tags"><span>Backend</span><span>Frontend</span><span>Testing</span></div>
         </div>
-        <div class="work-tags">
-          <span class="card-tag">Enterprise</span>
-          <span class="card-tag">Big Data</span>
-        </div>
-      </div>
-      <div class="work-row">
-        <span class="work-num">03</span>
-        <div class="work-info">
-          <div class="work-title">BRISMA v2.1 — BRI Subsidiary Audit</div>
-          <div class="work-desc">Extended digital audit capabilities across the BRI group with consistency in mind.</div>
-        </div>
-        <div class="work-tags">
-          <span class="card-tag">Enterprise</span>
-          <span class="card-tag">Audit</span>
-        </div>
-      </div>
-      <div class="work-row">
-        <span class="work-num">04</span>
-        <div class="work-info">
-          <div class="work-title">BRI TKT — Tata Kelola Terintegrasi</div>
-          <div class="work-desc">Integrated-governance dashboard unifying BRI's internal big data.</div>
-        </div>
-        <div class="work-tags">
-          <span class="card-tag">Dashboard</span>
-          <span class="card-tag">Big Data</span>
+        <div class="proc-item">
+          <div class="proc-head">
+            <span class="proc-step">Step 04</span>
+            <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19c1-6 6-11 12-12l2 2c-1 6-6 11-12 12z"/><path d="m9 15-3 3M14 6l-2 2"/></svg></div>
+          </div>
+          <h4>Ship &amp; Maintain</h4>
+          <div class="proc-tags"><span>Docker</span><span>Deploy</span><span>Monitor</span></div>
         </div>
       </div>
-      <div class="work-row">
-        <span class="work-num">05</span>
-        <div class="work-info">
-          <div class="work-title">BTPN — Morethanajob Portal</div>
-          <div class="work-desc">Employer-branding landing page + CMS admin panel with an integrated job portal.</div>
-        </div>
-        <div class="work-tags">
-          <span class="card-tag">CMS</span>
-          <span class="card-tag">Landing</span>
-        </div>
-      </div>
-      <div class="work-row">
-        <span class="work-num">06</span>
-        <div class="work-info">
-          <div class="work-title">Neurovi — Medical System</div>
-          <div class="work-desc">Hospital management info system: drug stock, scheduling, registration &amp; surgery management.</div>
-        </div>
-        <div class="work-tags">
-          <span class="card-tag">HMIS</span>
-          <span class="card-tag">Healthcare</span>
-        </div>
-      </div>
-    </div>
 
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div data-reveal="" class="contact-inner">
-      <p class="contact-label">Contact</p>
-      <h2 class="contact-h2">
-        Let's build something
-        <span class="outline">worth shipping<span class="accent">.</span></span>
-      </h2>
-      <a href="mailto:m.firliismail@gmail.com" class="contact-email">m.firliismail@gmail.com →</a>
-      <div class="contact-links">
-        <a href="tel:+6285711775592" class="contact-link">+62 857-1177-5592</a>
-        <a href="https://mfirliismail.github.io" target="_blank" rel="noopener" class="contact-link">mfirliismail.github.io</a>
-        <span class="contact-link muted">Indonesia</span>
+      <div class="stat-banner">
+        <div class="stat-big">4+</div>
+        <div class="stat-txt">
+          <strong>Years of production experience</strong>
+          <p>Trusted by teams to design, build, deploy and maintain systems in production — from enterprise audit platforms to climate-tech and wellness apps.</p>
+        </div>
+        <div class="stat-dots">
+          <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+            <g fill="currentColor">
+              <!-- dots pattern -->
+            </g>
+          </svg>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER MARQUEE -->
-  <div class="footer-marquee">
-    <a href="mailto:m.firliismail@gmail.com">
-      <span>Let's build something<span class="sep">✦</span></span>
-      <span aria-hidden="true">Let's build something<span class="sep">✦</span></span>
-      <span aria-hidden="true">Let's build something<span class="sep">✦</span></span>
-    </a>
-  </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head center">
+        <div>
+          <span class="section-pill">My Experience</span>
+          <h2 class="section-title big center">Building systems through code</h2>
+        </div>
+      </div>
 
-  <footer>
-    <span>© 2026 Muhamad Firli Ismail</span>
-    <span>Designed &amp; built from scratch</span>
-  </footer>
+      <div class="exp-card">
+        <div class="exp-inner">
+          <div class="exp-row">
+            <div class="exp-when">
+              <div class="exp-role">Fullstack Software Developer</div>
+              <div class="exp-date">Jul 2022 — Present · PT Noxus Ideata Prima</div>
+            </div>
+            <span class="exp-dot"></span>
+            <div class="exp-what">Lead a team designing app architecture, mapping business workflows, building backend &amp; frontend and deploying on Docker + Nginx VPS.</div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-when">
+              <div class="exp-role">Fullstack Developer — Freelance</div>
+              <div class="exp-date">2024 — 2025 · NASCLIM</div>
+            </div>
+            <span class="exp-dot"></span>
+            <div class="exp-what">Developed a climate-monitoring platform for sustainable mangrove management with real-time analytics &amp; carbon-restoration monitoring.</div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-when">
+              <div class="exp-role">Backend Developer</div>
+              <div class="exp-date">Feb 2022 — Aug 2022 · Sagara Technology</div>
+            </div>
+            <span class="exp-dot"></span>
+            <div class="exp-what">Delivered features with Node.js, Express.js &amp; PostgreSQL. Deployed and maintained services on GCP with Docker.</div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-when">
+              <div class="exp-role">Backend Developer</div>
+              <div class="exp-date">Nov 2021 — Feb 2022 · Tamadun Technology Intl.</div>
+            </div>
+            <span class="exp-dot"></span>
+            <div class="exp-what">Maintained and developed features with Node.js, Express.js &amp; MongoDB — bug fixes, stability &amp; performance.</div>
+          </div>
+        </div>
+        <div class="exp-cta-wrap">
+          <a href="#contact" class="exp-cta">Let's Work Together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLKITS -->
+    <section class="section" id="toolkits">
+      <span class="section-pill">Toolkits</span>
+      <p class="toolkit-lede">
+        Over the years, I've built a flexible toolkit that lets me move from concept to production efficiently — balancing engineering discipline with product velocity across the whole stack.
+      </p>
+
+      <div class="tool-grid">
+        <div class="tool-item">
+          <div class="tool-ico">JS</div>
+          <div class="tool-info">
+            <div class="tool-name">Node.js</div>
+            <div class="tool-desc">Backend runtime &amp; services</div>
+          </div>
+          <div class="tool-pct">95%</div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-ico dark">R</div>
+          <div class="tool-info">
+            <div class="tool-name">React &amp; Next.js</div>
+            <div class="tool-desc">Interface &amp; product UI</div>
+          </div>
+          <div class="tool-pct">90%</div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-ico dark">TS</div>
+          <div class="tool-info">
+            <div class="tool-name">TypeScript</div>
+            <div class="tool-desc">Type-safe fullstack apps</div>
+          </div>
+          <div class="tool-pct">90%</div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-ico dark">PG</div>
+          <div class="tool-info">
+            <div class="tool-name">PostgreSQL</div>
+            <div class="tool-desc">Relational data &amp; SQL</div>
+          </div>
+          <div class="tool-pct">88%</div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-ico dark">DK</div>
+          <div class="tool-info">
+            <div class="tool-name">Docker &amp; Nginx</div>
+            <div class="tool-desc">Deployment &amp; ops</div>
+          </div>
+          <div class="tool-pct">85%</div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-ico dark">ES</div>
+          <div class="tool-info">
+            <div class="tool-name">Elastic &amp; ClickHouse</div>
+            <div class="tool-desc">Search &amp; big-data</div>
+          </div>
+          <div class="tool-pct">80%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section class="section" id="archive">
+      <span class="section-pill">Archive</span>
+
+      <div class="archive-grid">
+        <div class="arc-item arc-tall"><img src="assets/Cryptoex fitur new.png" alt=""></div>
+        <div class="arc-item"><img src="assets/Cryptoex how.png" alt=""></div>
+        <div class="arc-item"><img src="assets/Shipping.png" alt=""></div>
+        <div class="arc-item arc-tall"><img src="assets/Shipping2.png" alt=""></div>
+        <div class="arc-item"><img src="assets/strovia-chat.png" alt=""></div>
+        <div class="arc-item"><img src="assets/strovia-player.png" alt=""></div>
+      </div>
+
+      <div class="work-list">
+        <div class="work-row">
+          <span class="work-num">01</span>
+          <div class="work-info">
+            <div class="work-title">SMA — Smart Audit Management</div>
+            <div class="work-desc">Integrated audit planning, real-time monitoring &amp; digital reporting (KKA, LHA, follow-ups).</div>
+          </div>
+          <div class="work-tags"><span>System Design</span><span>Security</span></div>
+        </div>
+        <div class="work-row">
+          <span class="work-num">02</span>
+          <div class="work-info">
+            <div class="work-title">BRISMA v2.0 / v2.0.2 — BRI Audit System</div>
+            <div class="work-desc">Enterprise audit platform integrated with BRI's internal big-data infrastructure.</div>
+          </div>
+          <div class="work-tags"><span>Enterprise</span><span>Big Data</span></div>
+        </div>
+        <div class="work-row">
+          <span class="work-num">03</span>
+          <div class="work-info">
+            <div class="work-title">BRISMA v2.1 — BRI Subsidiary Audit</div>
+            <div class="work-desc">Extended digital audit capabilities across the BRI group with consistency in mind.</div>
+          </div>
+          <div class="work-tags"><span>Enterprise</span><span>Audit</span></div>
+        </div>
+        <div class="work-row">
+          <span class="work-num">04</span>
+          <div class="work-info">
+            <div class="work-title">BRI TKT — Tata Kelola Terintegrasi</div>
+            <div class="work-desc">Integrated-governance dashboard unifying BRI's internal big data.</div>
+          </div>
+          <div class="work-tags"><span>Dashboard</span><span>Big Data</span></div>
+        </div>
+        <div class="work-row">
+          <span class="work-num">05</span>
+          <div class="work-info">
+            <div class="work-title">BTPN — Morethanajob Portal</div>
+            <div class="work-desc">Employer-branding landing page + CMS admin panel with an integrated job portal.</div>
+          </div>
+          <div class="work-tags"><span>CMS</span><span>Landing</span></div>
+        </div>
+        <div class="work-row">
+          <span class="work-num">06</span>
+          <div class="work-info">
+            <div class="work-title">Neurovi — Medical System</div>
+            <div class="work-desc">Hospital management info system: drug stock, scheduling, registration &amp; surgery management.</div>
+          </div>
+          <div class="work-tags"><span>HMIS</span><span>Healthcare</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section" id="about">
+      <div class="philosophy-card">
+        <span class="philosophy-pill">My Philosophy</span>
+        <div class="philosophy-body">
+          <h2 class="philosophy-title">Great code isn't decoration.</h2>
+          <div class="philosophy-divider"></div>
+          <div class="philosophy-cols">
+            <p>
+              I believe the strongest systems are built on a clear architecture. They create consistency, reliability, and traction across every workflow and touchpoint.
+            </p>
+            <p>
+              As a Fullstack Developer, my role is to bring structure to ideas, translate business goals into working systems, and ship products people can actually rely on.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-card">
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.4.6 3.5.1.4 0 .7-.2 1z"/></svg>
+        </div>
+        <div class="contact-inner">
+          <h2>Let's build<br>something impactful.</h2>
+          <p>If you're looking to ship a serious product — an enterprise system, a startup MVP, or a public-facing platform — I'd love to collaborate.</p>
+          <form class="contact-form" onsubmit="event.preventDefault();window.location='mailto:m.firliismail@gmail.com?subject=Project%20inquiry%20from%20'+encodeURIComponent(this.name.value)+'&body=Reply%20to:%20'+encodeURIComponent(this.email.value);">
+            <label class="cf-field">
+              <input type="text" name="name" placeholder="Enter your name" required>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            </label>
+            <label class="cf-field">
+              <input type="email" name="email" placeholder="Enter your e-mail" required>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </label>
+            <button type="submit" class="cf-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-block">
+        <div class="foot-top">
+          <a href="mailto:m.firliismail@gmail.com" class="foot-email">m.firliismail@gmail.com</a>
+          <a href="tel:+6285711775592" class="foot-phone">(+62) 857-1177-5592</a>
+        </div>
+        <div class="foot-cols">
+          <div class="foot-col">
+            <div class="foot-label">Links</div>
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="foot-col">
+            <div class="foot-label">Resource</div>
+            <a href="#services">Services</a>
+            <a href="#works">Works</a>
+            <a href="#experience">Experience</a>
+          </div>
+          <div class="foot-legal">
+            <a href="#">Privacy Policy</a><span> · </span><a href="#">Terms of Service</a>
+            <div class="foot-copy">© 2026 Muhamad Firli Ismail. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
