@@ -1019,6 +1019,8 @@ input { font: inherit; }
   gap: 16px;
   margin-top: 24px;
   margin-bottom: 40px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
 }
 .arc-item {
   border-radius: var(--radius-md);
